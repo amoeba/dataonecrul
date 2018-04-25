@@ -1,0 +1,58 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://dev.nceas.ucsb.edu/knb/d1/mn/v2/meta/00005f4b-f1ff-40a4-bb0b-7fed84ee9526
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      User-Agent: libcurl/7.54.0 r-curl/3.2 crul/0.5.2
+      Accept-Encoding: gzip, deflate
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: '200'
+      message: OK
+      explanation: Request fulfilled, document follows
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: Authorization, Content-Type, Origin, Cache-Control
+      access-control-allow-methods: GET, POST, PUT, OPTIONS
+      access-control-allow-origin: ''
+      content-encoding: gzip
+      content-length: '567'
+      content-type: text/xml
+      date: Wed, 25 Apr 2018 20:09:35 GMT
+      server: Apache/2.4.7 (Ubuntu)
+      status: HTTP/1.1 200 OK
+      vary: User-Agent,Accept-Encoding
+      x-frame-options:
+      - SAMEORIGIN
+      - sameorigin
+    body:
+      encoding: UTF-8
+      string: |
+        <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+        <ns3:systemMetadata xmlns:ns2="http://ns.dataone.org/service/types/v1" xmlns:ns3="http://ns.dataone.org/service/types/v2.0">
+            <serialVersion>0</serialVersion>
+            <identifier>00005f4b-f1ff-40a4-bb0b-7fed84ee9526</identifier>
+            <formatId>application/octet-stream</formatId>
+            <size>27</size>
+            <checksum algorithm="SHA256">5c10324fd42ff90b66f4fd841ab953c6f2a1f12d717a0c6f70eeaf90fec95f0e</checksum>
+            <submitter>http://orcid.org/0000-0002-0381-3766</submitter>
+            <rightsHolder>http://orcid.org/0000-0002-0381-3766</rightsHolder>
+            <accessPolicy>
+                <allow>
+                    <subject>public</subject>
+                    <permission>read</permission>
+                </allow>
+            </accessPolicy>
+            <replicationPolicy replicationAllowed="true" numberReplicas="3"/>
+            <archived>false</archived>
+            <dateUploaded>2016-04-14T22:09:40.974+00:00</dateUploaded>
+            <dateSysMetadataModified>2016-04-14T22:09:40.974+00:00</dateSysMetadataModified>
+            <originMemberNode>urn:node:mnTestKNB</originMemberNode>
+            <authoritativeMemberNode>urn:node:mnTestKNB</authoritativeMemberNode>
+        </ns3:systemMetadata>
+  recorded_at: 2018-04-25 20:09:35 GMT
+  recorded_with: vcr/0.0.7.9325
