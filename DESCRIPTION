@@ -16,3 +16,5 @@ Suggests:
     testthat,
     vcr,
     webmockr
+Remotes:
+  ropensci/vcr
