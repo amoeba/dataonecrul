@@ -22,12 +22,13 @@ http_interactions:
       content-encoding: gzip
       content-length: '567'
       content-type: text/xml
-      date: Wed, 25 Apr 2018 20:26:24 GMT
+      date: Tue, 01 May 2018 00:07:03 GMT
       server: Apache/2.4.7 (Ubuntu)
       status: HTTP/1.1 200 OK
       vary: User-Agent,Accept-Encoding
       x-frame-options:
       - SAMEORIGIN
+      - sameorigin
     body:
       encoding: UTF-8
       string: |
@@ -53,5 +54,5 @@ http_interactions:
             <originMemberNode>urn:node:mnTestKNB</originMemberNode>
             <authoritativeMemberNode>urn:node:mnTestKNB</authoritativeMemberNode>
         </ns3:systemMetadata>
-  recorded_at: 2018-04-25 20:26:24 GMT
-  recorded_with: vcr/0.0.7.9431
+  recorded_at: 2018-05-01 00:07:03 GMT
+  recorded_with: vcr/0.0.8.9534, webmockr/0.2.2.9119, crul/0.5.2
