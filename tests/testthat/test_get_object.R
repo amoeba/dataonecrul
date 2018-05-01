@@ -1,11 +1,9 @@
-
 library(testthat)
 
 context("getObject")
 
 # Test setup
 node <- node("https://cn.dataone.org/cn/v2")
-
 
 test_that("test a system metadata request works", {
   vcr::use_cassette("get_object", {
